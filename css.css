@@ -1,0 +1,45 @@
+body::before{
+	background-image: url('images/bg.svg');
+	background-size: cover;
+	-ms-background-size: cover;
+    -o-background-size: cover;
+    -moz-background-size: cover;
+    -webkit-background-size: cover;
+    opacity: 0.9;
+    background-position:10 center;
+
+}
+@media(max-width: 512px){
+	body:before{
+		background-position: 10 10;
+	}
+}
+#card-2-text{
+	font-size: 1.1rem;
+	line-height: 35px;
+	padding:40px;
+}
+#card-3-text{
+	font-size: 1.1rem;
+	line-height: 35px;
+	padding:40px;
+}
+#footer-text{
+	font-size: 14px;
+	line-height: 25px;
+}
+.headings{
+	text-align: left;
+	padding-left:40px;
+}
+.content{
+	padding-left:40px;
+	padding-right: 40px;
+	font-size: 0.9rem;
+	line-height: 28px;
+	padding-top: 10px;
+}
+.keyword-img{
+	height: 120px;
+	width: 120px;
+}
