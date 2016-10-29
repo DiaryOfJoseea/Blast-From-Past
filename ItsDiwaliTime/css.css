@@ -1,0 +1,17 @@
+#card-3{
+	background-image: url('photo1.jpg');
+	height: 550px;
+	background-size: contain; 
+	background-repeat: no-repeat;
+}
+#card-4{
+	background-image: url('photo2.jpg');
+	height: 450px; 
+	background-size: contain;
+	background-repeat: no-repeat;
+	background-position: 0px 0px;
+}
+#custom-t{
+	position: ;
+	bottom: 0px;
+}
