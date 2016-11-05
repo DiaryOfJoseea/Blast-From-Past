@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Nosh Ka msg</title>
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:regular,bold,italic,thin,light,bolditalic,black,medium&amp;lang=en">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="https://code.getmdl.io/1.2.1/material.grey-orange.min.css">
+    <link rel="stylesheet" href="../styles.css">
+    <link rel="stylesheet" type="text/css" href="../common.css">
+    <link rel="stylesheet" type="text/css" href="css.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+</head>
+<style type="text/css">
+	.code{
+	position: absolute;
+	left: 40%;
+	top:40%;
+	}
+	#code-card{
+		padding:20px;
+		margin: 5px;
+		font-size: 16px;
+
+	}
+	.code-input{
+		width: 60%;
+		display: inline-block;
+	}
+</style>
+<body>
+<div class="demo-blog mdl-layout mdl-js-layout has-drawer is-upgraded" id="content">
+      <div class="code">
+      	<div class="mdl-card" id="code-card">
+      		You my Babes...Get an Upgrade <br><br><br>
+      		Enter Your code below to get the message<br><br>
+      		<form action="#">
+			  <div class="mdl-textfield mdl-js-textfield">
+			    <input class="mdl-textfield__input" type="text" id="code">
+			    <label class="mdl-textfield__label" for="sample1">Text...</label>
+			  </div>
+			  <button onclick="checkcode()" class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent">
+				  Submit
+				</button>
+			</form>
+      	</div>
+      </div>
+</div>
+    <script src="https://code.getmdl.io/1.2.1/material.min.js"></script>
+    <script type="text/javascript">
+    	function checkcode(){
+    		code=document.getElementById('code').value;
+    		if (code="BTtalks") {
+    			document.getElementById("code-card").style.display="none";
+    			$("#content").load("msg.html");
+    		}
+    		
+    	}
+    </script>
+</body>
+</html>
