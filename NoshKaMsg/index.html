@@ -48,8 +48,9 @@
     <script src="https://code.getmdl.io/1.2.1/material.min.js"></script>
     <script type="text/javascript">
     	function checkcode(){
+    		var password="BTtalks";
     		code=document.getElementById('code').value;
-    		if (code="BTtalks") {
+    		if (code===password) {
     			document.getElementById("code-card").style.display="none";
     			$("#content").load("msg.html");
     		}
